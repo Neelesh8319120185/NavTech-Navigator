@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navtech Navigator - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer-container p, .footer-container ul {
+    font-size: 0.9em;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-900">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <a href="#" class="text-white text-xl font-bold">Navtech Navigator</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="facilities.html" class="text-gray-300 hover:text-white">Facilities</a></li>
+                <li><a href="services2.html" class="text-gray-300 hover:text-white">Services</a></li>
+                <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                <li><a href="help.html" class="text-gray-300 hover:text-white">Help</a></li>
+                <li><a href="mob.html" class="text-gray-300 hover:text-white">App Preview</a></li>
+                <li><a href="faqs.html" class="text-gray-300 hover:text-white">FAQs</a></li>
+                <li><a href="#" class="bg-indigo-900 text-white rounded-full px-6 py-2 border border-white">Download App</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="bg-cover bg-center" style="background-image: url('APP.jpg'); min-height: 100vh;">
+        <div class="container mx-auto flex justify-around items-start py-20">
+
+            <!-- Login Section -->
+            <div class="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full">
+                <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="username" class="sr-only">Username</label>
+                        <div class="flex items-center border-b-2 border-gray-300 py-2">
+                            <span class="material-icons text-gray-500 mr-2">person</span>
+                            <input type="text" id="username" placeholder="Username" class="w-full text-gray-700 py-2 px-3 focus:outline-none">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="sr-only">Password</label>
+                        <div class="flex items-center border-b-2 border-gray-300 py-2">
+                            <span class="material-icons text-gray-500 mr-2">lock</span>
+                            <input type="password" id="password" placeholder="Password" class="w-full text-gray-700 py-2 px-3 focus:outline-none">
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold">Login</button>
+                    <div class="text-center mt-4">
+                        <a href="#" class="text-gray-600 hover:underline">Forget Password?</a>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#" class="text-blue-600 hover:underline">Create New Account</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Mobile App Mockup -->
+            <div class="flex space-x-8">
+                <!-- First Mobile Screen -->
+                <div class="bg-white rounded-lg shadow-lg w-72 h-128 p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="material-icons text-gray-500">train</span>
+                        <span class="material-icons text-gray-500">menu</span>
+                    </div>
+                    <div class="rounded-lg overflow-hidden mb-4">
+                        <img src="appbg.jpg" Station Image" class="w-full">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Station" class="w-full bg-gray-200 rounded-lg p-2 mb-2 focus:outline-none">
+                        <input type="text" placeholder="City" class="w-full bg-gray-200 rounded-lg p-2 focus:outline-none">
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold">Search</button>
+                </div>
+
+                <!-- Second Mobile Screen -->
+                <div class="bg-white rounded-lg shadow-lg w-72 h-128 p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="material-icons text-gray-500">train</span>
+                        <span class="material-icons text-gray-500">menu</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Jabalpur Station</h3>
+                    <div class="flex items-center mb-4">
+                        <input type="text" placeholder="Location" class="w-full bg-gray-200 rounded-lg p-2 focus:outline-none">
+                        <span class="material-icons text-gray-500 ml-2">place</span>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Facilities:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">Food court</button>
+                        <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">Ticket counter</button>
+                        <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">Waiting area</button>
+                        <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">Voice-guidance</button>
+                        <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">Help Desk</button>
+                        <button class="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg">3-D Map</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>We are a company dedicated to providing the best service to our customers.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.css">Facilities</a></li>
+                    <li><a href="services2.css">Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: navtech-navigator@gmail.com</p>
+                <p>Phone: +123-456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Navtech Navigator. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

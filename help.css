@@ -1,0 +1,135 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #0b0b3b;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    /* color: #2b2b2b; */
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+}
+
+.btn-download {
+    background-color: #0b0b3b;
+    color: white;
+    border-radius: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(180deg, #0078d7, #1e2c4c);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.search-bar {
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* Common Topics Section */
+.common-topic-section {
+    background-color: #23394d;
+    color: white;
+    padding: 50px 0;
+}
+
+.topic-card {
+    background-color: #1b2a3b;
+    border-radius: 1rem;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+}
+
+.topic-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+a {
+    color: #00b8ff;
+}
+
+a:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.footer-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer-container p, .footer-container ul {
+    font-size: 0.9em;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
